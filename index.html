@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript Calculator</title>
+    <title>Javascript Calculator</title>
+
     <link rel="stylesheet" href="sass/main.scss" />
-    <script defer src="main.js"></script>
   </head>
   <body>
     <div class="calculator">
       <div class="display">
-        <div class="prevNum">
+        <div class="previousNumber">
           <p></p>
-          <div class="mathSign"></div>
+          <span class="mathSign"></span>
         </div>
-        <div class="curNum"></div>
+        <p class="currentNumber"></p>
       </div>
+
       <div class="panel">
         <button class="clear">C</button>
         <button class="operator">2^</button>
@@ -38,5 +39,16 @@
         <button class="number">.</button>
       </div>
     </div>
+
+    <div data-simplebar class="calculator-history">
+      <p class="history-title">
+        Last calculations
+        <button class="history-btn">Clear History</button>
+      </p>
+      <hr />
+      <ul class="history"></ul>
+    </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
