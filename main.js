@@ -1,7 +1,7 @@
 'use strict';
 
-const currentNumber = document.querySelector('.currentNumber');
-const previousNumber = document.querySelector('.previousNumber p');
+const currentNumber = document.querySelector('.curNum');
+const previousNumber = document.querySelector('.prevNum p');
 const mathSign = document.querySelector('.mathSign');
 const numbersButtons = document.querySelectorAll('.number');
 const operatorButtons = document.querySelectorAll('.operator');
